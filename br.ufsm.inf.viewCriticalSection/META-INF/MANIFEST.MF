@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BadSmells Plug-in
+Bundle-SymbolicName: br.ufsm.inf.viewCriticalSection;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: br.ufsm.inf.viewCriticalSection.ViewCriticalSectionPlugin
+Bundle-Vendor: Eduardo Piveta
+Require-Bundle: 
+ org.eclipse.jdt.core,
+ org.eclipse.jdt.ui,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.ui,
+ org.eclipse.core.runtime.compatibility,
+ org.eclipse.debug.ui,
+ org.eclipse.cdt.ui
+Eclipse-LazyStart: true
+Import-Package: org.eclipse.cdt.core.model,
+ org.eclipse.cdt.internal.ui.actions,
+ org.eclipse.jface.text
+Export-Package: br.ufsm.inf.viewCriticalSection,
+ br.ufsm.inf.viewCriticalSection.views
