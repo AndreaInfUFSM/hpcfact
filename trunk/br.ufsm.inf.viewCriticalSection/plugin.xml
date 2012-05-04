@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="br.ufsm.inf.viewCriticalSection"
+            name="Possible Critical Section"/>
+      <view
+            allowMultiple="false"
+            category="br.ufsm.inf.viewCriticalSection"
+            class="br.ufsm.inf.viewCriticalSection.views.CriticalSectionView"
+            icon="icons/critical.gif" 
+            id="br.ufsm.inf.viewCriticalSection.views.CriticalSectionView"
+            name="Possible Critical Section"/>
+   </extension>
+</plugin>

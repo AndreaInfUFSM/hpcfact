@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_1XrJYPs0EeCv6a_PkhZ2nw">
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJYfs0EeCv6a_PkhZ2nw" name="boolean"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJYvs0EeCv6a_PkhZ2nw" name="byte"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJY_s0EeCv6a_PkhZ2nw" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJZPs0EeCv6a_PkhZ2nw" name="double"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJZfs0EeCv6a_PkhZ2nw" name="float"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJZvs0EeCv6a_PkhZ2nw" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJZ_s0EeCv6a_PkhZ2nw" name="long"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_1XrJaPs0EeCv6a_PkhZ2nw" name="short"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_1XrJafs0EeCv6a_PkhZ2nw" name="br">
+    <packagedElement xmi:type="uml:Package" xmi:id="_1XrJavs0EeCv6a_PkhZ2nw" name="ufsm">
+      <packagedElement xmi:type="uml:Package" xmi:id="_1XrJa_s0EeCv6a_PkhZ2nw" name="inf">
+        <packagedElement xmi:type="uml:Package" xmi:id="_1XrJbPs0EeCv6a_PkhZ2nw" name="viewCriticalSection">
+          <packagedElement xmi:type="uml:Class" xmi:id="_1XrwcPs0EeCv6a_PkhZ2nw" name="ViewCriticalSectionPlugin">
+            <generalization xmi:id="_1Xrwcfs0EeCv6a_PkhZ2nw" general="_1XuMw_s0EeCv6a_PkhZ2nw"/>
+            <ownedAttribute xmi:id="_1Xrwcvs0EeCv6a_PkhZ2nw" name="plugin" visibility="private" type="_1XrwcPs0EeCv6a_PkhZ2nw" association="_1XuMx_s0EeCv6a_PkhZ2nw"/>
+            <ownedAttribute xmi:id="_1Xrwc_s0EeCv6a_PkhZ2nw" name="model" visibility="private" type="_1XsXhvs0EeCv6a_PkhZ2nw" association="_1XuMyfs0EeCv6a_PkhZ2nw"/>
+            <ownedOperation xmi:id="_1XrwdPs0EeCv6a_PkhZ2nw" name="start" visibility="public">
+              <ownedParameter xmi:id="_1Xrwdfs0EeCv6a_PkhZ2nw" name="context" type="_1XuMxPs0EeCv6a_PkhZ2nw"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_1Xrwdvs0EeCv6a_PkhZ2nw" name="stop" visibility="public">
+              <ownedParameter xmi:id="_1Xrwd_s0EeCv6a_PkhZ2nw" name="context" type="_1XuMxPs0EeCv6a_PkhZ2nw"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_1XrwePs0EeCv6a_PkhZ2nw" name="getDefault" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_1Xrwefs0EeCv6a_PkhZ2nw" name="return" type="_1XrwcPs0EeCv6a_PkhZ2nw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_1Xrwevs0EeCv6a_PkhZ2nw" name="getImageDescriptor" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_1Xrwe_s0EeCv6a_PkhZ2nw" name="path" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedParameter xmi:id="_1XrwfPs0EeCv6a_PkhZ2nw" name="return" type="_1XuMxvs0EeCv6a_PkhZ2nw" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_1Xrwffs0EeCv6a_PkhZ2nw" name="getModel" visibility="public">
+              <ownedParameter xmi:id="_1Xrwfvs0EeCv6a_PkhZ2nw" name="return" type="_1XsXhvs0EeCv6a_PkhZ2nw" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_1Xrwf_s0EeCv6a_PkhZ2nw" name="views">
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XrwgPs0EeCv6a_PkhZ2nw" name="CriticalSectionTableViewPart">
+              <generalization xmi:id="_1Xrwgfs0EeCv6a_PkhZ2nw" general="_1Xtl1_s0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwgvs0EeCv6a_PkhZ2nw" name="TAG_COLUMN" visibility="protected" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwg_s0EeCv6a_PkhZ2nw" name="TAG_NUMBER" visibility="protected" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XrwhPs0EeCv6a_PkhZ2nw" name="TAG_WIDTH" visibility="protected" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwhfs0EeCv6a_PkhZ2nw" name="columnHeaders" visibility="private" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwhvs0EeCv6a_PkhZ2nw" name="columnLayouts" visibility="private" type="_1Xtl2Ps0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwh_s0EeCv6a_PkhZ2nw" name="doubleClickAction" visibility="private" type="_1Xtl2fs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XrwiPs0EeCv6a_PkhZ2nw" name="memento" visibility="private" type="_1Xtl2vs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwifs0EeCv6a_PkhZ2nw" name="table" visibility="private" type="_1Xtl2_s0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwivs0EeCv6a_PkhZ2nw" name="viewer" visibility="private" type="_1Xtl3Ps0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1Xrwi_s0EeCv6a_PkhZ2nw" name="createPartControl" visibility="public">
+                <ownedParameter xmi:id="_1XrwjPs0EeCv6a_PkhZ2nw" name="parent" type="_1Xtl3fs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwjfs0EeCv6a_PkhZ2nw" name="createColumns" visibility="protected"/>
+              <ownedOperation xmi:id="_1Xrwjvs0EeCv6a_PkhZ2nw" name="restoreColumnWidths" visibility="protected">
+                <ownedParameter xmi:id="_1Xrwj_s0EeCv6a_PkhZ2nw" name="memento" type="_1Xtl2vs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XrwkPs0EeCv6a_PkhZ2nw" name="saveColumnWidths" visibility="protected">
+                <ownedParameter xmi:id="_1Xrwkfs0EeCv6a_PkhZ2nw" name="memento" type="_1Xtl2vs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwkvs0EeCv6a_PkhZ2nw" name="hookEvents" visibility="protected"/>
+              <ownedOperation xmi:id="_1Xrwk_s0EeCv6a_PkhZ2nw" name="saveState" visibility="public">
+                <ownedParameter xmi:id="_1XrwlPs0EeCv6a_PkhZ2nw" name="memento" type="_1Xtl2vs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwlfs0EeCv6a_PkhZ2nw" name="init" visibility="public">
+                <ownedParameter xmi:id="_1Xrwlvs0EeCv6a_PkhZ2nw" name="site" type="_1Xtl3vs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1Xrwl_s0EeCv6a_PkhZ2nw" name="memento" type="_1Xtl2vs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XrwmPs0EeCv6a_PkhZ2nw" name="setFocus" visibility="public"/>
+              <ownedOperation xmi:id="_1Xrwmfs0EeCv6a_PkhZ2nw" name="getTable" visibility="public">
+                <ownedParameter xmi:id="_1Xrwmvs0EeCv6a_PkhZ2nw" name="return" type="_1Xtl2_s0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwm_s0EeCv6a_PkhZ2nw" name="getViewer" visibility="public">
+                <ownedParameter xmi:id="_1XrwnPs0EeCv6a_PkhZ2nw" name="return" type="_1Xtl3Ps0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwnfs0EeCv6a_PkhZ2nw" name="setColumnHeaders" visibility="public">
+                <ownedParameter xmi:id="_1Xrwnvs0EeCv6a_PkhZ2nw" name="strings" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwn_s0EeCv6a_PkhZ2nw" name="setColumnLayouts" visibility="public">
+                <ownedParameter xmi:id="_1XrwoPs0EeCv6a_PkhZ2nw" name="data" type="_1Xtl2Ps0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwofs0EeCv6a_PkhZ2nw" name="setDoubleClickAction" visibility="public">
+                <ownedParameter xmi:id="_1Xrwovs0EeCv6a_PkhZ2nw" name="action" type="_1Xtl2fs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwo_s0EeCv6a_PkhZ2nw" name="fillContextMenu" visibility="protected">
+                <ownedParameter xmi:id="_1XrwpPs0EeCv6a_PkhZ2nw" name="manager" type="_1Xtl3_s0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwpfs0EeCv6a_PkhZ2nw" name="fillLocalPullDown" visibility="protected">
+                <ownedParameter xmi:id="_1Xrwpvs0EeCv6a_PkhZ2nw" name="manager" type="_1Xtl3_s0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwp_s0EeCv6a_PkhZ2nw" name="fillLocalToolBar" visibility="protected">
+                <ownedParameter xmi:id="_1XrwqPs0EeCv6a_PkhZ2nw" name="manager" type="_1XuMsPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwqfs0EeCv6a_PkhZ2nw" name="selectionChanged" visibility="protected">
+                <ownedParameter xmi:id="_1Xrwqvs0EeCv6a_PkhZ2nw" name="event" type="_1XuMsfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwq_s0EeCv6a_PkhZ2nw" name="createActions" visibility="protected"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XrwrPs0EeCv6a_PkhZ2nw" name="CriticalSectionEvent">
+              <ownedAttribute xmi:id="_1Xrwrfs0EeCv6a_PkhZ2nw" name="marker" visibility="private" type="_1XuMsvs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwrvs0EeCv6a_PkhZ2nw" name="type" visibility="private" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwr_s0EeCv6a_PkhZ2nw" name="fileName" visibility="private" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XrwsPs0EeCv6a_PkhZ2nw" name="details" visibility="private" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xrwsfs0EeCv6a_PkhZ2nw" name="projectName" visibility="private" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1Xrwsvs0EeCv6a_PkhZ2nw" name="getMarker" visibility="public">
+                <ownedParameter xmi:id="_1Xrws_s0EeCv6a_PkhZ2nw" name="return" type="_1XuMsvs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XrwtPs0EeCv6a_PkhZ2nw" name="setMaker" visibility="public">
+                <ownedParameter xmi:id="_1Xrwtfs0EeCv6a_PkhZ2nw" name="marker" type="_1XuMsvs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwtvs0EeCv6a_PkhZ2nw" name="getDetails" visibility="public">
+                <ownedParameter xmi:id="_1Xrwt_s0EeCv6a_PkhZ2nw" name="return" type="_1XuMxfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XrwuPs0EeCv6a_PkhZ2nw" name="setDetails" visibility="public">
+                <ownedParameter xmi:id="_1Xrwufs0EeCv6a_PkhZ2nw" name="details" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwuvs0EeCv6a_PkhZ2nw" name="getFileName" visibility="public">
+                <ownedParameter xmi:id="_1Xrwu_s0EeCv6a_PkhZ2nw" name="return" type="_1XuMxfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XrwvPs0EeCv6a_PkhZ2nw" name="setFileName" visibility="public">
+                <ownedParameter xmi:id="_1Xrwvfs0EeCv6a_PkhZ2nw" name="fileName" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xrwvvs0EeCv6a_PkhZ2nw" name="getType" visibility="public">
+                <ownedParameter xmi:id="_1Xrwv_s0EeCv6a_PkhZ2nw" name="return" type="_1XuMxfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XrwwPs0EeCv6a_PkhZ2nw" name="setType" visibility="public">
+                <ownedParameter xmi:id="_1Xrwwfs0EeCv6a_PkhZ2nw" name="type" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXgPs0EeCv6a_PkhZ2nw" name="setProjectName" visibility="public">
+                <ownedParameter xmi:id="_1XsXgfs0EeCv6a_PkhZ2nw" name="projectName" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXgvs0EeCv6a_PkhZ2nw" name="getProjectName" visibility="public">
+                <ownedParameter xmi:id="_1XsXg_s0EeCv6a_PkhZ2nw" name="return" type="_1XuMxfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXhPs0EeCv6a_PkhZ2nw" name="toString" visibility="public">
+                <ownedParameter xmi:id="_1XsXhfs0EeCv6a_PkhZ2nw" name="return" type="_1XuMxfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XsXhvs0EeCv6a_PkhZ2nw" name="CriticalSectionModel">
+              <ownedAttribute xmi:id="_1XsXh_s0EeCv6a_PkhZ2nw" name="listenerList" visibility="public" type="_1XuMs_s0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XsXiPs0EeCv6a_PkhZ2nw" name="events" visibility="public" type="_1XuMtPs0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1XsXifs0EeCv6a_PkhZ2nw" name="addListener" visibility="public">
+                <ownedParameter xmi:id="_1XsXivs0EeCv6a_PkhZ2nw" name="listener" type="_1XsXmPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXi_s0EeCv6a_PkhZ2nw" name="removeListener" visibility="public">
+                <ownedParameter xmi:id="_1XsXjPs0EeCv6a_PkhZ2nw" name="listener" type="_1XsXmPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXjfs0EeCv6a_PkhZ2nw" name="addEvent" visibility="public">
+                <ownedParameter xmi:id="_1XsXjvs0EeCv6a_PkhZ2nw" name="evento" type="_1XrwrPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXj_s0EeCv6a_PkhZ2nw" name="clear" visibility="public"/>
+              <ownedOperation xmi:id="_1XsXkPs0EeCv6a_PkhZ2nw" name="getElements" visibility="public">
+                <ownedParameter xmi:id="_1XsXkfs0EeCv6a_PkhZ2nw" name="inputElement" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXkvs0EeCv6a_PkhZ2nw" name="return" type="_1XuMtfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXk_s0EeCv6a_PkhZ2nw" name="dispose" visibility="public"/>
+              <ownedOperation xmi:id="_1XsXlPs0EeCv6a_PkhZ2nw" name="inputChanged" visibility="public">
+                <ownedParameter xmi:id="_1XsXlfs0EeCv6a_PkhZ2nw" name="viewer" type="_1XuMtvs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXlvs0EeCv6a_PkhZ2nw" name="oldInput" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXl_s0EeCv6a_PkhZ2nw" name="newInput" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_1XsXmPs0EeCv6a_PkhZ2nw" name="ICriticalSectionListener">
+              <ownedOperation xmi:id="_1XsXmfs0EeCv6a_PkhZ2nw" name="handleEvent" visibility="public">
+                <ownedParameter xmi:id="_1XsXmvs0EeCv6a_PkhZ2nw" name="event" type="_1XrwrPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXm_s0EeCv6a_PkhZ2nw" name="removeEvent" visibility="public">
+                <ownedParameter xmi:id="_1XsXnPs0EeCv6a_PkhZ2nw" name="evento" type="_1XrwrPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XsXnfs0EeCv6a_PkhZ2nw" name="CriticalSectionViewLabelProvider">
+              <generalization xmi:id="_1XsXnvs0EeCv6a_PkhZ2nw" general="_1XuMt_s0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1XsXn_s0EeCv6a_PkhZ2nw" name="getColumnText" visibility="public">
+                <ownedParameter xmi:id="_1XsXoPs0EeCv6a_PkhZ2nw" name="obj" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXofs0EeCv6a_PkhZ2nw" name="index" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXovs0EeCv6a_PkhZ2nw" name="return" type="_1XuMxfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XsXo_s0EeCv6a_PkhZ2nw" name="getColumnImage" visibility="public">
+                <ownedParameter xmi:id="_1XsXpPs0EeCv6a_PkhZ2nw" name="obj" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXpfs0EeCv6a_PkhZ2nw" name="index" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XsXpvs0EeCv6a_PkhZ2nw" name="return" type="_1XuMuPs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XsXp_s0EeCv6a_PkhZ2nw" name="CriticalSectionView">
+              <generalization xmi:id="_1XsXqPs0EeCv6a_PkhZ2nw" general="_1XrwgPs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XsXqfs0EeCv6a_PkhZ2nw" name="action1" visibility="private" type="_1XuMufs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XsXqvs0EeCv6a_PkhZ2nw" name="doubleClickAction" visibility="private" type="_1XuMufs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XsXq_s0EeCv6a_PkhZ2nw" name="openAction" visibility="private" type="_1Xtlxvs0EeCv6a_PkhZ2nw" association="_1XuMvfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XsXrPs0EeCv6a_PkhZ2nw" name="modelListener" visibility="private" type="_1XtlwPs0EeCv6a_PkhZ2nw" association="_1XuMv_s0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XsXrfs0EeCv6a_PkhZ2nw" name="model" visibility="private" type="_1XsXhvs0EeCv6a_PkhZ2nw" association="_1XuMwfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XtloPs0EeCv6a_PkhZ2nw" name="COL_IMAGE" visibility="public" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xtlofs0EeCv6a_PkhZ2nw" name="COL_VAR_NAME" visibility="public" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xtlovs0EeCv6a_PkhZ2nw" name="COL_FILE_NAME" visibility="public" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xtlo_s0EeCv6a_PkhZ2nw" name="COL_TYPE" visibility="public" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1XtlpPs0EeCv6a_PkhZ2nw" name="COL_DETAILS" visibility="public" type="_1XrJZvs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xtlpfs0EeCv6a_PkhZ2nw" name="columnHeaders" visibility="private" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              <ownedAttribute xmi:id="_1Xtlpvs0EeCv6a_PkhZ2nw" name="columnLayouts" visibility="private" type="_1Xtl2Ps0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1Xtlp_s0EeCv6a_PkhZ2nw" name="createPartControl" visibility="public">
+                <ownedParameter xmi:id="_1XtlqPs0EeCv6a_PkhZ2nw" name="parent" type="_1Xtl3fs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtlqfs0EeCv6a_PkhZ2nw" name="contributeToActionBars" visibility="protected"/>
+              <ownedOperation xmi:id="_1Xtlqvs0EeCv6a_PkhZ2nw" name="fillLocalPullDown" visibility="protected">
+                <ownedParameter xmi:id="_1Xtlq_s0EeCv6a_PkhZ2nw" name="manager" type="_1Xtl3_s0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XtlrPs0EeCv6a_PkhZ2nw" name="fillContextMenu" visibility="protected">
+                <ownedParameter xmi:id="_1Xtlrfs0EeCv6a_PkhZ2nw" name="manager" type="_1Xtl3_s0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtlrvs0EeCv6a_PkhZ2nw" name="fillLocalToolBar" visibility="protected">
+                <ownedParameter xmi:id="_1Xtlr_s0EeCv6a_PkhZ2nw" name="manager" type="_1XuMsPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XtlsPs0EeCv6a_PkhZ2nw" name="createActions" visibility="protected"/>
+              <ownedOperation xmi:id="_1Xtlsfs0EeCv6a_PkhZ2nw" name="hookDoubleClickAction" visibility="private"/>
+              <ownedOperation xmi:id="_1Xtlsvs0EeCv6a_PkhZ2nw" name="showMessage" visibility="private">
+                <ownedParameter xmi:id="_1Xtls_s0EeCv6a_PkhZ2nw" name="message" type="_1XuMxfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XtltPs0EeCv6a_PkhZ2nw" name="setFocus" visibility="public"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1Xtltfs0EeCv6a_PkhZ2nw" name="ViewContentProvider">
+              <ownedOperation xmi:id="_1Xtltvs0EeCv6a_PkhZ2nw" name="inputChanged" visibility="public">
+                <ownedParameter xmi:id="_1Xtlt_s0EeCv6a_PkhZ2nw" name="v" type="_1XuMtvs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1XtluPs0EeCv6a_PkhZ2nw" name="oldInput" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1Xtlufs0EeCv6a_PkhZ2nw" name="newInput" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtluvs0EeCv6a_PkhZ2nw" name="dispose" visibility="public"/>
+              <ownedOperation xmi:id="_1Xtlu_s0EeCv6a_PkhZ2nw" name="getElements" visibility="public">
+                <ownedParameter xmi:id="_1XtlvPs0EeCv6a_PkhZ2nw" name="parent" type="_1XuMtfs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1Xtlvfs0EeCv6a_PkhZ2nw" name="return" type="_1XuMtfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1Xtlvvs0EeCv6a_PkhZ2nw" name="NameSorter">
+              <generalization xmi:id="_1Xtlv_s0EeCv6a_PkhZ2nw" general="_1XuMuvs0EeCv6a_PkhZ2nw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XtlwPs0EeCv6a_PkhZ2nw" name="CriticalSectionListener" visibility="private" clientDependency="_1Xtlwfs0EeCv6a_PkhZ2nw">
+              <interfaceRealization xmi:id="_1Xtlwfs0EeCv6a_PkhZ2nw" name="ICriticalSectionListener" supplier="_1XsXmPs0EeCv6a_PkhZ2nw" client="_1XtlwPs0EeCv6a_PkhZ2nw" contract="_1XsXmPs0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1Xtlwvs0EeCv6a_PkhZ2nw" name="handleEvent" visibility="public">
+                <ownedParameter xmi:id="_1Xtlw_s0EeCv6a_PkhZ2nw" name="evento" type="_1XrwrPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1XtlxPs0EeCv6a_PkhZ2nw" name="removeEvent" visibility="public">
+                <ownedParameter xmi:id="_1Xtlxfs0EeCv6a_PkhZ2nw" name="evento" type="_1XrwrPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1Xtlxvs0EeCv6a_PkhZ2nw" name="CriticalSectionOpenMarkedAction">
+              <generalization xmi:id="_1Xtlx_s0EeCv6a_PkhZ2nw" general="_1XtlzPs0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1XtlyPs0EeCv6a_PkhZ2nw" name="getImageDescriptor" visibility="public">
+                <ownedParameter xmi:id="_1Xtlyfs0EeCv6a_PkhZ2nw" name="return" type="_1XuMxvs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtlyvs0EeCv6a_PkhZ2nw" name="run" visibility="public">
+                <ownedParameter xmi:id="_1Xtly_s0EeCv6a_PkhZ2nw" name="marker" type="_1XuMsvs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_1XtlzPs0EeCv6a_PkhZ2nw" name="CriticalSectionMarkerDispatchAction">
+              <generalization xmi:id="_1Xtlzfs0EeCv6a_PkhZ2nw" general="_1XuMu_s0EeCv6a_PkhZ2nw"/>
+              <ownedOperation xmi:id="_1Xtlzvs0EeCv6a_PkhZ2nw" name="selectionChanged" visibility="public">
+                <ownedParameter xmi:id="_1Xtlz_s0EeCv6a_PkhZ2nw" name="selection" type="_1XuMvPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtl0Ps0EeCv6a_PkhZ2nw" name="checkEnabled" visibility="private">
+                <ownedParameter xmi:id="_1Xtl0fs0EeCv6a_PkhZ2nw" name="selection" type="_1XuMvPs0EeCv6a_PkhZ2nw"/>
+                <ownedParameter xmi:id="_1Xtl0vs0EeCv6a_PkhZ2nw" name="return" type="_1XrJYfs0EeCv6a_PkhZ2nw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtl0_s0EeCv6a_PkhZ2nw" name="run" visibility="public">
+                <ownedParameter xmi:id="_1Xtl1Ps0EeCv6a_PkhZ2nw" name="selection" type="_1XuMvPs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_1Xtl1fs0EeCv6a_PkhZ2nw" name="run" visibility="protected" isAbstract="true">
+                <ownedParameter xmi:id="_1Xtl1vs0EeCv6a_PkhZ2nw" name="marker" type="_1XuMsvs0EeCv6a_PkhZ2nw"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl1_s0EeCv6a_PkhZ2nw" name="ViewPart"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl2Ps0EeCv6a_PkhZ2nw" name="ColumnLayoutData"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl2fs0EeCv6a_PkhZ2nw" name="IAction"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl2vs0EeCv6a_PkhZ2nw" name="IMemento"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl2_s0EeCv6a_PkhZ2nw" name="Table"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl3Ps0EeCv6a_PkhZ2nw" name="TableViewer"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl3fs0EeCv6a_PkhZ2nw" name="Composite"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl3vs0EeCv6a_PkhZ2nw" name="IViewSite"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1Xtl3_s0EeCv6a_PkhZ2nw" name="IMenuManager"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMsPs0EeCv6a_PkhZ2nw" name="IToolBarManager"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMsfs0EeCv6a_PkhZ2nw" name="SelectionChangedEvent"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMsvs0EeCv6a_PkhZ2nw" name="IMarker"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMs_s0EeCv6a_PkhZ2nw" name="ListenerList"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMtPs0EeCv6a_PkhZ2nw" name="List"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMtfs0EeCv6a_PkhZ2nw" name="Object"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMtvs0EeCv6a_PkhZ2nw" name="Viewer"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMt_s0EeCv6a_PkhZ2nw" name="LabelProvider"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMuPs0EeCv6a_PkhZ2nw" name="Image"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMufs0EeCv6a_PkhZ2nw" name="Action"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMuvs0EeCv6a_PkhZ2nw" name="ViewerSorter"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMu_s0EeCv6a_PkhZ2nw" name="SelectionDispatchAction"/>
+            <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMvPs0EeCv6a_PkhZ2nw" name="IStructuredSelection"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_1XuMvfs0EeCv6a_PkhZ2nw" memberEnd="_1XsXq_s0EeCv6a_PkhZ2nw _1XuMvvs0EeCv6a_PkhZ2nw">
+              <ownedEnd xmi:id="_1XuMvvs0EeCv6a_PkhZ2nw" name="target" type="_1XsXp_s0EeCv6a_PkhZ2nw" association="_1XuMvfs0EeCv6a_PkhZ2nw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_1XuMv_s0EeCv6a_PkhZ2nw" memberEnd="_1XsXrPs0EeCv6a_PkhZ2nw _1XuMwPs0EeCv6a_PkhZ2nw">
+              <ownedEnd xmi:id="_1XuMwPs0EeCv6a_PkhZ2nw" name="target" type="_1XsXp_s0EeCv6a_PkhZ2nw" association="_1XuMv_s0EeCv6a_PkhZ2nw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_1XuMwfs0EeCv6a_PkhZ2nw" memberEnd="_1XsXrfs0EeCv6a_PkhZ2nw _1XuMwvs0EeCv6a_PkhZ2nw">
+              <ownedEnd xmi:id="_1XuMwvs0EeCv6a_PkhZ2nw" name="target" type="_1XsXp_s0EeCv6a_PkhZ2nw" association="_1XuMwfs0EeCv6a_PkhZ2nw"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMw_s0EeCv6a_PkhZ2nw" name="AbstractUIPlugin"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMxPs0EeCv6a_PkhZ2nw" name="BundleContext"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMxfs0EeCv6a_PkhZ2nw" name="String"/>
+          <packagedElement xmi:type="uml:DataType" xmi:id="_1XuMxvs0EeCv6a_PkhZ2nw" name="ImageDescriptor"/>
+          <packagedElement xmi:type="uml:Association" xmi:id="_1XuMx_s0EeCv6a_PkhZ2nw" memberEnd="_1Xrwcvs0EeCv6a_PkhZ2nw _1XuMyPs0EeCv6a_PkhZ2nw">
+            <ownedEnd xmi:id="_1XuMyPs0EeCv6a_PkhZ2nw" name="target" type="_1XrwcPs0EeCv6a_PkhZ2nw" association="_1XuMx_s0EeCv6a_PkhZ2nw"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_1XuMyfs0EeCv6a_PkhZ2nw" memberEnd="_1Xrwc_s0EeCv6a_PkhZ2nw _1XuMyvs0EeCv6a_PkhZ2nw">
+            <ownedEnd xmi:id="_1XuMyvs0EeCv6a_PkhZ2nw" name="target" type="_1XrwcPs0EeCv6a_PkhZ2nw" association="_1XuMyfs0EeCv6a_PkhZ2nw"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
