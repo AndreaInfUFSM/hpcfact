@@ -25,7 +25,7 @@
       <group><!-- Refactorings that change local variable declarations -->
          <editorRefactoring command="org.eclipse.photran.ui.DetectPossibleCriticalSectionsCommand" />
      <!--    <editorRefactoring 
-             class="org.eclipse.photran.internal.core.refactoring.DetectedPossibleCriticalSections" 
+             class="org.eclipse.photran.internal.core.refactoring.DetectPossibleCriticalSections" 
          /> -->
          <resourceRefactoring 
              class="org.eclipse.photran.internal.core.refactoring.GetStatistics" 
